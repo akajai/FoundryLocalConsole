@@ -11,6 +11,7 @@ namespace FoundryLocalConsole;
 /// Microsoft.Extensions.AI IChatClient over Microsoft Foundry Local (in-process, no server).
 /// Loads the model from ModelCacheDir (external drive) on first use and keeps it loaded.
 /// </summary>
+///
 public sealed class FoundryPhiChatClient(
     IOptions<FoundryPhiOptions> options,
     ILogger<FoundryPhiChatClient> logger) : IChatClient
